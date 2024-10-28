@@ -7,10 +7,11 @@ pipeline {
             steps {
                 script {
                     def config = [
-                        url : '',
-                        branchName: '',
-                        credID: ''
+                        url : 'https://github.com/vickyvg11/test_python_project.git',
+                        branchName: 'main',
+                        credID: '1_Git'
                     ]
+                    gitCheckout(config)
                 }
             }
         }
